@@ -4,14 +4,7 @@ const Selection = ({ applyColor }) => {
   const [color, setColor] = React.useState({ background: "" });
 
   const handleClick = () => {
-    /*setColor({ background: "blue" });*/
-
-    /*setColor(()=>applyColor(nextBackground));*/
-    //console.log(applyColor.background);
-    //console.log(applyColor());
-
-    setColor({ background: applyColor().background });
-    // setColor(applyColor({background}))
+    applyColor(setColor);
   };
 
   return (
