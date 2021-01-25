@@ -11,6 +11,7 @@ const Selection = ({ applyColor }) => {
     //console.log(applyColor());
 
     setColor({ background: applyColor().background });
+    // setColor(applyColor({background}))
   };
 
   return (
